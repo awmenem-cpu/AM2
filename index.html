@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AM2 | Shop Smart</title>
+  <meta name="description" content="AM2 متجر إلكتروني عصري للتسوق الذكي.">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+:root{--bg:#080611;--card:#111022;--card2:#17132b;--text:#fff;--muted:#a9a5ba;--pink:#ff22b8;--violet:#8c3cff;--line:rgba(255,255,255,.09);--shadow:0 20px 60px rgba(0,0,0,.35)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Cairo,Arial,sans-serif;background:radial-gradient(circle at 80% 10%,rgba(140,60,255,.12),transparent 30%),var(--bg);color:var(--text)}a{text-decoration:none;color:inherit}.announcement{text-align:center;background:linear-gradient(90deg,#6d20d9,#ff22b8,#6d20d9);padding:8px;font-size:13px;font-weight:700}.header{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:28px;padding:14px 5%;background:rgba(8,6,17,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.brand{min-width:105px;display:flex;flex-direction:column;line-height:.85}.brand-main{font-size:31px;font-weight:900;letter-spacing:-2px}.brand-main span,.hero h1 span,.why-title strong{color:var(--pink)}.brand small{font-size:7px;letter-spacing:3px;color:#aaa;margin-top:7px}.nav{display:flex;gap:25px;align-items:center;flex:1;justify-content:center}.nav a{font-size:13px;color:#c8c4d1;padding:9px 0;position:relative}.nav a:hover,.nav a.active{color:#fff}.nav a.active:after{content:"";position:absolute;bottom:0;right:0;left:0;height:2px;background:var(--pink);box-shadow:0 0 12px var(--pink)}.header-actions{display:flex;align-items:center;gap:8px}.icon-btn,.cart-btn{border:1px solid var(--line);background:#111022;color:white;border-radius:12px;padding:9px 12px;cursor:pointer}.icon-btn{font-size:20px}.cart-btn{position:relative}.cart-btn b{position:absolute;top:-7px;left:-5px;background:var(--pink);border-radius:50%;font-size:10px;width:20px;height:20px;display:grid;place-items:center}.hero{width:90%;max-width:1400px;margin:22px auto;min-height:520px;border:1px solid var(--line);border-radius:28px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;position:relative;background:linear-gradient(115deg,#0d091b,#190d32 50%,#080611)}.hero:before{content:"";position:absolute;inset:0;background:url("hero-mockup.png") center/cover no-repeat;opacity:.15;mix-blend-mode:screen}.hero-content{position:relative;z-index:2;padding:70px 8%;display:flex;flex-direction:column;justify-content:center}.eyebrow,.mini-title{color:#d79bff;font-size:12px;font-weight:800;letter-spacing:1px}.hero h1{font-size:58px;line-height:1.1;margin:15px 0}.hero p{color:var(--muted);max-width:500px;font-size:17px}.hero-buttons{display:flex;gap:12px;margin-top:25px}.btn{padding:13px 24px;border-radius:14px;font-weight:800;border:1px solid var(--line)}.btn.primary{background:linear-gradient(135deg,var(--violet),var(--pink));box-shadow:0 10px 35px rgba(255,34,184,.25)}.btn.ghost{background:rgba(255,255,255,.04)}.hero-stats{display:flex;gap:35px;margin-top:38px}.hero-stats div{display:flex;flex-direction:column}.hero-stats strong{font-size:22px}.hero-stats small{color:var(--muted)}.hero-art{position:relative;min-height:500px;overflow:hidden;background:radial-gradient(circle at 50% 45%,rgba(255,34,184,.22),transparent 28%),radial-gradient(circle at 80% 30%,rgba(140,60,255,.3),transparent 35%)}.hero-logo{position:absolute;right:50%;top:46%;transform:translate(50%,-50%);font-size:85px;font-weight:900;letter-spacing:-8px;filter:drop-shadow(0 0 30px rgba(255,34,184,.35));opacity:.9}.hero-logo span{color:var(--pink)}.hero-logo small{display:block;font-size:10px;letter-spacing:8px;text-align:center;margin-top:-12px;color:#aaa}.device{position:absolute;filter:drop-shadow(0 20px 30px #000);font-size:90px;animation:float 5s ease-in-out infinite}.laptop{right:15%;top:13%;font-size:120px}.phone{left:16%;top:17%;font-size:70px;animation-delay:1s}.headphones{right:23%;bottom:13%;font-size:100px;animation-delay:2s}.watch{left:17%;bottom:18%;font-size:75px;animation-delay:1.5s}@keyframes float{50%{transform:translateY(-12px) rotate(2deg)}}.glow{position:absolute;border-radius:50%;filter:blur(60px)}.g1{width:180px;height:180px;background:#ff22b8;opacity:.18;right:25%;bottom:10%}.g2{width:180px;height:180px;background:#7138ff;opacity:.2;left:15%;top:10%}.section{width:90%;max-width:1400px;margin:65px auto}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px}.section-head h2{margin:4px 0 0;font-size:29px}.section-head>a{color:#e8a3ff;font-size:13px}.categories{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}.category{border:1px solid var(--line);background:linear-gradient(180deg,#131126,#0d0b18);color:#fff;border-radius:18px;padding:20px 10px;display:flex;align-items:center;justify-content:center;gap:10px;flex-direction:column;cursor:pointer;transition:.25s}.category:hover,.category.active{transform:translateY(-4px);border-color:rgba(255,34,184,.5);box-shadow:0 10px 35px rgba(255,34,184,.1)}.category:first-child{color:#e6b1ff}.promos{width:90%;max-width:1400px;margin:0 auto 65px;display:grid;grid-template-columns:1fr 1fr;gap:16px}.promo{min-height:210px;border:1px solid var(--line);border-radius:22px;padding:30px;display:flex;align-items:center;justify-content:space-between;overflow:hidden;position:relative}.promo:after{content:"";position:absolute;width:250px;height:250px;border-radius:50%;filter:blur(3px);opacity:.25;left:-70px;bottom:-130px;background:var(--pink)}.promo.purple{background:linear-gradient(115deg,#120a28,#2b1250)}.promo.pink{background:linear-gradient(115deg,#260b2d,#0d0a20)}.promo span,.promo small{display:block;color:#d0cadc}.promo strong{display:block;font-size:35px;margin:4px 0}.promo a{display:inline-block;margin-top:15px;color:#ff72d5;font-weight:800;font-size:13px}.promo-icon{font-size:95px;filter:drop-shadow(0 10px 30px rgba(255,34,184,.3));z-index:1}.filters{display:flex;gap:8px}.filter{background:transparent;color:#aaa;border:1px solid var(--line);padding:7px 12px;border-radius:9px;cursor:pointer}.filter.active{color:#fff;background:#25113a;border-color:#b23cff}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{background:linear-gradient(180deg,#151326,#0f0d19);border:1px solid var(--line);border-radius:20px;padding:13px;position:relative;transition:.25s}.product:hover{transform:translateY(-5px);border-color:rgba(255,34,184,.35);box-shadow:var(--shadow)}.heart{position:absolute;top:12px;left:12px;border:0;background:#fff;color:#333;border-radius:50%;width:31px;height:31px;cursor:pointer}.discount{position:absolute;top:12px;right:12px;background:var(--pink);padding:4px 8px;border-radius:8px;font-size:10px;font-weight:800}.product-img{height:205px;border-radius:15px;background:radial-gradient(circle at 50% 40%,rgba(255,34,184,.28),transparent 45%),linear-gradient(145deg,#24203b,#0c0b15);display:grid;place-items:center;font-size:85px;margin-bottom:14px}.product h3{font-size:15px;margin:0 0 7px}.rating{font-size:12px;color:#ffc928}.price{display:flex;align-items:center;gap:8px;margin:8px 0 13px}.price strong{font-size:20px;color:#fff}.old{text-decoration:line-through;color:#777;font-size:11px}.add{width:100%;border:0;border-radius:11px;padding:11px;background:linear-gradient(135deg,#6c24c9,#a1169b);color:#fff;font-family:inherit;font-weight:800;cursor:pointer}.why{width:90%;max-width:1400px;margin:70px auto 0;padding:35px;border:1px solid var(--line);border-radius:25px;background:radial-gradient(circle at 15% 80%,rgba(255,34,184,.14),transparent 25%),#0e0b1c;display:flex;gap:30px;align-items:center}.why-title{min-width:170px;font-size:24px}.why-title span{display:block;color:#aaa}.why-grid{display:grid;grid-template-columns:repeat(4,1fr);width:100%;gap:10px}.why-grid div{border-right:1px solid var(--line);padding:0 20px}.why-grid div:first-child{border:0}.why-grid i{font-style:normal;font-size:23px;color:var(--pink)}.why-grid strong{display:block;margin:8px 0}.why-grid p{color:#999;font-size:12px;margin:0}footer{margin-top:70px;border-top:1px solid var(--line);padding:45px 5%;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:35px;background:#07060e}footer h4{margin-top:0}footer a{display:block;color:#999;font-size:13px;margin:9px 0}.footer-brand p{color:#999}.copyright{text-align:center;border-top:1px solid var(--line);padding:15px;color:#666;font-size:11px}.overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);opacity:0;pointer-events:none;transition:.25s;z-index:29}.overlay.show{opacity:1;pointer-events:auto}.drawer{position:fixed;z-index:30;top:0;right:-430px;width:min(430px,100%);height:100%;background:#0e0c19;border-left:1px solid var(--line);padding:22px;transition:.3s;display:flex;flex-direction:column}.drawer.open{right:0}.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:15px}.drawer-head button,.search-box>button{background:transparent;border:0;color:white;font-size:28px;cursor:pointer}.cart-items{flex:1;overflow:auto;padding:15px 0}.cart-row{display:grid;grid-template-columns:55px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.cart-thumb{height:55px;border-radius:10px;background:#211a35;display:grid;place-items:center;font-size:25px}.cart-row small{display:block;color:#aaa}.qty{display:flex;gap:5px;align-items:center}.qty button{background:#241b39;color:white;border:0;border-radius:5px;cursor:pointer}.cart-total{display:flex;justify-content:space-between;padding:15px 0;font-size:18px}.checkout{border:0;background:linear-gradient(135deg,var(--violet),var(--pink));color:white;border-radius:12px;padding:14px;font-family:inherit;font-weight:800;cursor:pointer}.search-modal{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:40;display:none;place-items:start center;padding-top:100px}.search-modal.show{display:grid}.search-box{width:min(650px,92%);background:#111022;border:1px solid var(--line);border-radius:20px;padding:25px;position:relative}.search-box>button{position:absolute;left:15px;top:8px}.search-box h3{margin-top:0}.search-box input{width:100%;background:#080611;border:1px solid var(--line);border-radius:12px;padding:14px;color:#fff;font:inherit;outline:none}.search-result{padding:12px;border-bottom:1px solid var(--line);cursor:pointer}.search-result:hover{background:#1a1430}@media(max-width:1000px){.nav{display:none}.header{justify-content:space-between}.hero{grid-template-columns:1fr}.hero-art{min-height:330px;order:-1}.hero-content{padding:40px 7%}.hero h1{font-size:44px}.categories{grid-template-columns:repeat(4,1fr)}.products{grid-template-columns:repeat(2,1fr)}.why{display:block}.why-grid{margin-top:25px}.why-grid div{border:0;border-bottom:1px solid var(--line);padding:15px}}@media(max-width:600px){.header-actions .icon-btn{display:none}.hero,.section,.promos,.why{width:94%}.hero{margin-top:12px}.hero-art{min-height:250px}.device{font-size:55px}.laptop{font-size:75px}.headphones{font-size:65px}.hero-logo{font-size:55px}.categories{grid-template-columns:repeat(2,1fr)}.promos{grid-template-columns:1fr}.products{grid-template-columns:1fr 1fr;gap:10px}.product-img{height:145px;font-size:60px}.product h3{font-size:13px}.filters{display:none}.section-head h2{font-size:23px}.why-grid{grid-template-columns:1fr 1fr}.hero-stats{gap:18px}.hero-buttons{flex-direction:column}.btn{text-align:center}footer{grid-template-columns:1fr 1fr}}
+
+</style>
+</head>
+<body>
+  <div class="announcement">🔥 عروض AM2 الجديدة وصلت — خصومات تصل إلى 40%</div>
+
+  <header class="header">
+    <a class="brand" href="#home" aria-label="AM2">
+      <span class="brand-main">AM<span>2</span></span>
+      <small>SHOP SMART</small>
+    </a>
+
+    <nav class="nav">
+      <a class="active" href="#home">الرئيسية</a>
+      <a href="#products">المنتجات</a>
+      <a href="#categories">الأقسام</a>
+      <a href="#about">لماذا AM2؟</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" title="بحث">⌕</button>
+      <button class="icon-btn" id="wishlistBtn" title="المفضلة">♡</button>
+      <button class="cart-btn" id="cartBtn">🛒 <span>السلة</span><b id="cartCount">0</b></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">AM2 • SHOP SMART</span>
+        <h1>تسوّق أذكى..<br><span>اختَر أفضل.</span></h1>
+        <p>منتجات مختارة بعناية، أسعار مميزة وتجربة تسوق سريعة وبسيطة.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#products">تسوّق الآن <span>←</span></a>
+          <a class="btn ghost" href="#categories">استكشف المنتجات</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>+500</strong><small>منتج</small></div>
+          <div><strong>24/7</strong><small>دعم</small></div>
+          <div><strong>100%</strong><small>دفع آمن</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="glow g1"></div><div class="glow g2"></div>
+        <div class="device laptop">💻</div>
+        <div class="device phone">📱</div>
+        <div class="device headphones">🎧</div>
+        <div class="device watch">⌚</div>
+        <div class="hero-logo">AM<span>2</span><small>SHOP SMART</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-head">
+        <div><span class="mini-title">استكشف</span><h2>أقسام المتجر</h2></div>
+        <a href="#products">عرض الكل ←</a>
+      </div>
+      <div class="categories">
+        <button class="category active" data-category="الكل">◈<span>جميع المنتجات</span></button>
+        <button class="category" data-category="إلكترونيات">💻<span>إلكترونيات</span></button>
+        <button class="category" data-category="موبايلات">📱<span>موبايلات</span></button>
+        <button class="category" data-category="إكسسوارات">🎧<span>إكسسوارات</span></button>
+        <button class="category" data-category="ألعاب">🎮<span>الألعاب</span></button>
+        <button class="category" data-category="ملابس">👕<span>ملابس</span></button>
+        <button class="category" data-category="المنزل">🏠<span>المنزل</span></button>
+      </div>
+    </section>
+
+    <section class="promos">
+      <div class="promo purple">
+        <div><span>خصومات تصل إلى</span><strong>40%</strong><small>على اللابتوبات والأجهزة الإلكترونية</small><a href="#products">تسوّق الآن ←</a></div>
+        <div class="promo-icon">💻</div>
+      </div>
+      <div class="promo pink">
+        <div><span>إكسسواراتك المفضلة</span><strong>بأسعار لا تُقاوم</strong><small>اختيارات مميزة لعشاق التقنية</small><a href="#products">تسوّق الآن ←</a></div>
+        <div class="promo-icon">🎧</div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-head">
+        <div><span class="mini-title">مختارات AM2</span><h2>أحدث المنتجات 🔥</h2></div>
+        <div class="filters">
+          <button class="filter active" data-filter="الكل">الكل</button>
+          <button class="filter" data-filter="إلكترونيات">إلكترونيات</button>
+          <button class="filter" data-filter="إكسسوارات">إكسسوارات</button>
+          <button class="filter" data-filter="ألعاب">ألعاب</button>
+        </div>
+      </div>
+      <div class="products" id="productsGrid"></div>
+    </section>
+
+    <section class="why" id="about">
+      <div class="why-title"><span>لماذا تختار</span><strong>AM2؟</strong></div>
+      <div class="why-grid">
+        <div><i>✓</i><strong>جودة مضمونة</strong><p>منتجات مختارة بعناية.</p></div>
+        <div><i>⚡</i><strong>شحن سريع</strong><p>توصيل سريع وآمن.</p></div>
+        <div><i>🔒</i><strong>دفع آمن</strong><p>طرق دفع موثوقة ومحمية.</p></div>
+        <div><i>💬</i><strong>دعم العملاء</strong><p>مساعدتك متاحة دائمًا.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-brand"><div class="brand-main">AM<span>2</span></div><p>تسوّق أذكى.. اختَر أفضل.</p></div>
+    <div><h4>المتجر</h4><a href="#products">المنتجات</a><a href="#categories">الأقسام</a><a href="#products">العروض</a></div>
+    <div><h4>المساعدة</h4><a href="#">الشحن والتوصيل</a><a href="#">طرق الدفع</a><a href="#">الأسئلة الشائعة</a></div>
+    <div><h4>تواصل معنا</h4><a href="#">واتساب</a><a href="#">فيسبوك</a><a href="#">إنستجرام</a></div>
+  </footer>
+  <div class="copyright">© 2026 AM2 — جميع الحقوق محفوظة</div>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer">
+    <div class="drawer-head"><h3>سلة المشتريات</h3><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total"><span>الإجمالي</span><strong id="cartTotal">0 ج.م</strong></div>
+    <button class="checkout" id="checkoutBtn">إتمام الطلب</button>
+  </aside>
+
+  <div class="search-modal" id="searchModal">
+    <div class="search-box"><button id="closeSearch">×</button><h3>ابحث في AM2</h3><input id="searchInput" placeholder="اكتب اسم المنتج..." autofocus><div id="searchResults"></div></div>
+  </div>
+
+  <script>
+const products=[
+{id:1,name:"ساعة ذكية AM2 Pro",cat:"إلكترونيات",price:2999,old:3399,discount:"-12%",icon:"⌚",rating:"★★★★★"},
+{id:2,name:"سماعات ألعاب Pro",cat:"إكسسوارات",price:1299,old:1599,discount:"-18%",icon:"🎧",rating:"★★★★★"},
+{id:3,name:"كيبورد ميكانيكي RGB",cat:"ألعاب",price:1799,old:1999,discount:"-10%",icon:"⌨️",rating:"★★★★★"},
+{id:4,name:"ماوس ألعاب RGB",cat:"ألعاب",price:799,old:999,discount:"-20%",icon:"🖱️",rating:"★★★★★"},
+{id:5,name:"آيفون 15",cat:"موبايلات",price:42999,old:49999,discount:"-15%",icon:"📱",rating:"★★★★☆"},
+{id:6,name:"سماعات بلوتوث TWS",cat:"إكسسوارات",price:1499,old:1999,discount:"-25%",icon:"🎧",rating:"★★★★★"},
+{id:7,name:"لابتوب AM2 Ultra",cat:"إلكترونيات",price:38999,old:42999,discount:"-10%",icon:"💻",rating:"★★★★★"},
+{id:8,name:"جاكيت عصري",cat:"ملابس",price:1199,old:1499,discount:"-20%",icon:"🧥",rating:"★★★★☆"}
+];
+let cart=JSON.parse(localStorage.getItem("am2-cart")||"[]");
+const grid=document.getElementById("productsGrid"), count=document.getElementById("cartCount");
+function money(n){return n.toLocaleString("ar-EG")+" ج.م"}
+function renderProducts(list=products){
+ grid.innerHTML=list.map(p=>`<article class="product">
+ <button class="heart" onclick="toggleWish(this)">♡</button><span class="discount">${p.discount}</span>
+ <div class="product-img">${p.icon}</div><h3>${p.name}</h3><div class="rating">${p.rating}</div>
+ <div class="price"><strong>${money(p.price)}</strong><span class="old">${money(p.old)}</span></div>
+ <button class="add" onclick="addToCart(${p.id})">أضف إلى السلة 🛒</button></article>`).join("");
+}
+function addToCart(id){const p=products.find(x=>x.id===id);const item=cart.find(x=>x.id===id);item?item.qty++:cart.push({...p,qty:1});save();openCart()}
+function save(){localStorage.setItem("am2-cart",JSON.stringify(cart));renderCart();count.textContent=cart.reduce((a,x)=>a+x.qty,0)}
+function renderCart(){
+ const box=document.getElementById("cartItems");
+ if(!cart.length){box.innerHTML='<div style="text-align:center;color:#999;padding:60px 10px">السلة فارغة 🛒<br><small>أضف منتجاتك المفضلة لتظهر هنا.</small></div>'}
+ else box.innerHTML=cart.map(x=>`<div class="cart-row"><div class="cart-thumb">${x.icon}</div><div><strong>${x.name}</strong><small>${money(x.price)}</small></div><div class="qty"><button onclick="changeQty(${x.id},-1)">−</button><span>${x.qty}</span><button onclick="changeQty(${x.id},1)">+</button></div></div>`).join("");
+ document.getElementById("cartTotal").textContent=money(cart.reduce((a,x)=>a+x.price*x.qty,0));
+}
+function changeQty(id,d){const x=cart.find(i=>i.id===id);if(!x)return;x.qty+=d;if(x.qty<=0)cart=cart.filter(i=>i.id!==id);save()}
+function openCart(){document.getElementById("cartDrawer").classList.add("open");document.getElementById("overlay").classList.add("show")}
+function closeCart(){document.getElementById("cartDrawer").classList.remove("open");document.getElementById("overlay").classList.remove("show")}
+function toggleWish(b){b.textContent=b.textContent==="♡"?"♥":"♡";b.style.color=b.textContent==="♥"?"#ff22b8":"#333"}
+function filter(cat){renderProducts(cat==="الكل"?products:products.filter(p=>p.cat===cat))}
+document.querySelectorAll(".category").forEach(b=>b.onclick=()=>{document.querySelectorAll(".category").forEach(x=>x.classList.remove("active"));b.classList.add("active");filter(b.dataset.category)});
+document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");filter(b.dataset.filter)});
+document.getElementById("cartBtn").onclick=openCart;document.getElementById("closeCart").onclick=closeCart;document.getElementById("overlay").onclick=closeCart;
+document.getElementById("checkoutBtn").onclick=()=>alert(cart.length?"تم تجهيز سلة الطلب — اربط بوابة الدفع أو واتساب لإكمال الطلب.":"السلة فارغة");
+const modal=document.getElementById("searchModal"), input=document.getElementById("searchInput"), results=document.getElementById("searchResults");
+document.getElementById("searchBtn").onclick=()=>{modal.classList.add("show");input.focus();};
+document.getElementById("closeSearch").onclick=()=>modal.classList.remove("show");
+modal.onclick=e=>{if(e.target===modal)modal.classList.remove("show")};
+input.oninput=()=>{const q=input.value.trim().toLowerCase();const list=products.filter(p=>(p.name+" "+p.cat).toLowerCase().includes(q));results.innerHTML=q?list.map(p=>`<div class="search-result" onclick="addToCart(${p.id});modal.classList.remove('show')">${p.icon} ${p.name} — ${money(p.price)}</div>`).join(""):""};
+renderProducts();save();
+
+</script>
+</body>
+</html>
